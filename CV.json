@@ -12,9 +12,9 @@
     },
 
     "arbetsLivsErfarenheter": [
-        { "företagsNamn": "Viking Age Clothing", "arbetsDistrikt": "Göteborg", "arbetsYrke": "Lagerarbetare", "arbete":"Packade ordrar, inventering", "AnställsTid": "Januari 2021 - December 2022 Deltid"},
-        { "företagsNamn": "Nabo Group", "arbetsDistrikt": "Göteborg", "arbetsYrke": "Ekonomiassistent", "arbete": "Arkiverade papper och digitala filer", "AnställsTid": "Juli-November 2022 Timanställd"},
-        { "företagsNamn": "Samhall", "arbetsDistrikt":"Göteborg", "arbetsYrke": "Lokalvård", "arbete":"städade lokaler inom Göteborgs området", "AnställsTid":"Juli-2023 Juli-2024 Fulltid"}
+        { "företag": "Viking Age Clothing", "arbetsDistrikt": "Göteborg", "arbetsYrke": "Lagerarbetare", "arbete":"Packade ordrar, inventering", "AnställsTid": "Januari 2021 - December 2022 Deltid"},
+        { "företag": "Nabo Group", "arbetsDistrikt": "Göteborg", "arbetsYrke": "Ekonomiassistent", "arbete": "Arkiverade papper och digitala filer", "AnställsTid": "Juli-November 2022 Timanställd"},
+        { "företag": "Samhall", "arbetsDistrikt":"Göteborg", "arbetsYrke": "Lokalvård", "arbete":"städade lokaler inom Göteborgs området", "AnställsTid":"Juli-2023 Juli-2024 Fulltid"}
     ],
 
     "utbildning": [
