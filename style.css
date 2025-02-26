@@ -1,0 +1,337 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f9f9f9;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    grid-template-areas: "header navigation" "profile profile" "title title"
+    "section section" "footer footer";
+}
+
+.header{
+    grid-area: header;
+    background-color: black;
+    color: white;
+    font-family: "RobotoFlex", arial, Helvetica;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/*Navigation styling*/
+.navigation {
+    grid-area: navigation;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.navigation ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navigation li{
+    height: 20px;
+}
+
+.navigation a{
+    height: 100%;
+    padding: 25px 30px;
+    color: white;
+    font-family: "Roboto Flex", arial, Helvetica;
+    text-decoration: none;
+}
+
+.navigation a:hover{
+    background-color: darkgrey;
+}
+
+
+/* Profile styling */
+.profile{
+    display: flex;
+    grid-area: profile;
+    margin: 10px;
+    justify-content: space-evenly;
+}
+
+.picture-box{
+    max-width: 500px;
+    height: auto;
+}
+
+#profile-picture{
+    background-color: antiquewhite;
+    max-width: 300px;
+    height: auto;
+    margin-right:10px ;
+    border-radius: 5px;
+}
+
+.profile-article{
+    border: 1px solid tan;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+    padding-left: 5px;
+    width: 50vw;
+    height: auto;
+}
+
+.profile-article h1{
+    font-family: "Roboto Flex", arial, Helvetica;
+}
+
+.profile-article p{
+    font-family: Assistant, sans-serif, 'Courier New';
+}
+
+/* Projekts styling */
+.Projekts{
+    grid-area: title;
+}
+
+.Projekts h1{
+    font-family: "Roboto Flex", arial, Helvetica;
+}
+
+.Projekt-rows{
+    display: flex;
+    justify-content: space-around;
+    grid-area: section;
+}
+
+.Projekt-card{
+    position: relative;
+    max-width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: 150ms ease;
+    border: 1px solid lightgray;
+}
+
+.Projekt-card h2{
+    font-family: "Roboto Flex", arial, Helvetica;
+    text-decoration: underline;
+}
+
+.Projekt-card p{
+    font-family: Assistant, sans-serif, 'Courier New';
+}
+
+.Projekt-card a{
+    font-family: Assistant, sans-serif, 'Courier New';
+}
+
+#Projekt-1{
+    background-image: url(./picture/Skärmbild\ 2025-02-14\ 164759.png);
+    background-position: center;
+    background-size:cover ;
+    color:black;
+}
+
+#Projekt-2{
+    background-image: url(./picture/website-647013_640.jpg);
+    background-position: center;
+    background-size:cover ;
+    color: white;
+}
+
+#Projekt-3{
+    background-image: url(./picture/code-3385504_640.jpg);
+    background-position: center;
+    background-size:cover ;
+    color: white;
+}
+
+#Projekt-4{
+    background-image: url(./picture/coding-699318_640.jpg);
+    background-position: center;
+    background-size:cover ;
+    color: white;
+}
+
+.Projekt-rows a{
+    position: absolute;
+    bottom: 10% ;
+    margin-left: 3px;
+    padding: 3px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/*Hover effect on project cards*/
+.Projekt-card:hover{
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1) ,
+    -10px -10px 10px white ;
+    scale: 1.03;
+}
+
+/*about-me-block styling*/
+#about-me{
+    grid-area: profile;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+#about-me-pic{
+    max-width: 475px;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.about-me-block{
+    background-color: blanchedalmond;
+    border: 1px solid tan;
+    padding-left: 5px;
+    border-radius: 5px;
+    grid-area: section;
+}
+
+.about-me-block h1{
+    font-family: "Roboto Flex", arial, Helvetica;
+}
+
+.about-me-block p{
+    font-family: Assistant, sans-serif, 'Courier New';
+}
+
+/* ContactsPage-block styling*/
+
+#contactPage{
+    grid-area: profile;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.contactPage-block{
+    background-color: blanchedalmond;
+    border: 1px solid tan;
+    padding-left: 5px;
+    border-radius: 5px;
+    width: 50vw;
+}
+
+.contactPage-block h1{
+    font-family: "Roboto Flex", arial, Helvetica;
+
+}
+
+.contactPage-block h2{
+    font-family: "Roboto Flex", arial, Helvetica;
+
+}
+
+.contactPage-block p {
+    font-family: Assistant, sans-serif, 'Courier New';
+
+}
+
+.contactPage-block a{
+    font-family: Assistant, sans-serif, 'Courier New';
+
+}
+
+.contactPage-picture-box{
+    max-width: 500px;
+    height: auto;
+}
+
+#contactPage-pic{
+    max-width: 500px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: lightgray;
+    font-family: Assistant, sans-serif, 'Courier New';
+    color: black;
+    padding: 10px;
+}
+
+.footer-link-icon {
+    scale: 1.5;
+    margin: 0px 15px;
+    transition: 150ms ease;
+}
+
+.footer-link-icon:hover {
+    transform: scale(1.5);
+}
+
+/* mobile mode */
+@media(max-width: 720px){
+    .grid-container{
+        grid-template-areas: "header navigation" "profile profile" 
+        "title title" "section section" "footer footer" ;
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+    }
+    .picture-box{
+        max-width:100%;
+        display:flex;
+        justify-content: center;
+        margin-bottom: 3px;
+    }
+
+    .profile-article{
+        width: 95vw;
+    }
+
+    .Projekt-rows{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        margin: 10px;
+        
+    }
+    .Projekt-card{
+        width: 250px;
+        height: 300px;
+        margin: 10px;
+    }
+    /*Aboutpage mobile mode*/
+    #about-me{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me-block{
+        width: 95vw;
+    }
+
+    /*Contactpage mobile mode*/
+    #contactPage{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactPage-block{
+        width: 95vw;
+    }
+}
