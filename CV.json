@@ -1,33 +1,14 @@
 {
-    "förnamn" : "Erik",
-    "efternamn" : "Eriksson Broomé",
-    "kontaktuppgifter": {
-        "adress": {
-        "gatuadress": "Rydetvägen 30",
-        "postort": "Olofstorp",
-        "postnummer": "424 91"
-        },
-    "mobilnummer": "07-XXXXXXXX",
-    "e-mail": "erik.o.eriksson@telia.com"
-    },
 
-    "arbetsLivsErfarenheter": [
-        { "företag": "Viking Age Clothing", "arbetsDistrikt": "Göteborg", "arbetsYrke": "Lagerarbetare", "arbete":"Packade ordrar, inventering", "AnställsTid": "Januari 2021 - December 2022 Deltid"},
-        { "företag": "Nabo Group", "arbetsDistrikt": "Göteborg", "arbetsYrke": "Ekonomiassistent", "arbete": "Arkiverade papper och digitala filer", "AnställsTid": "Juli-November 2022 Timanställd"},
-        { "företag": "Samhall", "arbetsDistrikt":"Göteborg", "arbetsYrke": "Lokalvård", "arbete":"städade lokaler inom Göteborgs området", "AnställsTid":"Juli-2023 Juli-2024 Fulltid"}
+    "workExperiences": [
+        { "business": "Viking Age Clothing", "workPlace": "Göteborg", "career": "Lagerarbetare", "work":"Packade ordrar, inventering", "employmentTime": "Januari 2021 - December 2022 Deltid"},
+        { "business": "Nabo Group", "workPlace": "Göteborg", "career": "Ekonomiassistent", "work": "Arkiverade papper och digitala filer", "employmentTime": "Juli-November 2022 Timanställd"},
+        { "business": "Samhall", "workPlace":"Göteborg", "career": "Lokalvård", "work":"städade lokaler inom Göteborgs området", "employmentTime":"Juli-2023 Juli-2024 Fulltid"}
     ],
 
-    "utbildning": [
-        { "utbildningSkola": "ABF Komvux Odinskola", "utbildningDistrikt": "Göteborg", "kurs": "Gymnasieexamen Naturvetenskapligt Program", "utbildningTid": "2018 - 2022"},
-        { "utbildningSkola": "YrkesHögskolan i Borås", "utbildningDistrikt": "Borås", "kurs": "Frontend 25 React Distans", "utbildningTid": "2025 - pågående"}
-    ],
+    "educations": [
+        { "school": "ABF Komvux Odinskola", "schoolPlace": "Göteborg", "course": "Gymnasieexamen Naturvetenskapligt Program", "courseTime": "2018 - 2022"},
+        { "school": "YrkesHögskolan i Borås", "schoolPlace": "Borås", "course": "Frontend 25 React Distans", "courseTime": "2025 - pågående"}
+    ]
 
-    "övrigt": {
-
-        "egenskaper": ["Plikttrogen", "Nogrann", "Pålitlig"],
-        "språk": ["Svenska", "Engelska"],
-
-        "generellDataKunskap": ["google doc", "google slides", "google sheets"],
-        "programSpråk": ["HTML", "CSS", "JavaScript"]
-    }
 }
