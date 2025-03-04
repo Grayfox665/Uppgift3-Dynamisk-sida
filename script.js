@@ -1,4 +1,24 @@
 
+
+
+/*Creates unordered list for CV */
+const ul = document.createElement('ul');
+const ulTwo = document.createElement('ul');
+
+const br = document.createElement('br');
+const brTwo = document.createElement('br');
+
+ul.setAttribute('id', 'CVwork');
+ulTwo.setAttribute('id', 'CVeducation');
+
+/*Selects profile-article to give Id */
+document.querySelector("article.profile-article").setAttribute('id', 'CV-article');
+
+document.getElementById('CV-article').appendChild(ul);
+document.getElementById('CV-article').appendChild(br);
+document.getElementById('CV-article').appendChild(ulTwo);
+document.getElementById('CV-article').appendChild(brTwo);
+
 /* fetches data from CV JSON file*/
 function fetchData() {
     fetch("CV.json")
@@ -31,5 +51,10 @@ function fetchData() {
             console.error("Fel vid hamtning av JSON:", error);
         });
 }
+
+/*styles the CV list */
+document.getElementById('CVwork').style.listStyle = "none";
+document.getElementById('CVeducation').style.listStyle = "none";
+
 /*Activates the function when website loads up */
 fetchData();
