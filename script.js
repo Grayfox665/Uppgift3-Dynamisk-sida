@@ -52,9 +52,77 @@ function fetchData() {
         });
 }
 
+/*Activates the function when website loads up */
+fetchData();
+
+
+
 /*styles the CV list */
 document.getElementById('CVwork').style.listStyle = "none";
 document.getElementById('CVeducation').style.listStyle = "none";
 
-/*Activates the function when website loads up */
-fetchData();
+/*The interactive function */
+
+
+/*easteregg interaktive funktion */
+
+/*creats the easterbtn */
+const easterBtn = document.createElement('label');
+
+easterBtn.setAttribute('id', "Easter-button");
+
+document.querySelector(".picture-box").appendChild(easterBtn);
+document.querySelector(".picture-box").setAttribute('id', "CV-picture-box");
+document.getElementById("CV-picture-box").style.position = "relative";
+
+/*styles the button */
+document.getElementById("Easter-button").style.position = "absolute";
+document.getElementById("Easter-button").style.marginTop = "53%";
+document.getElementById("Easter-button").style.marginLeft = "-60%";
+document.getElementById("Easter-button").style.padding ="7px";
+document.getElementById("Easter-button").style.display = "hidden";
+
+/*create easternose modal */
+const easterNose = document.createElement('div');
+document.body.appendChild(easterNose);
+easterNose.setAttribute('id', "Easter-nose");
+
+/*creates nosecontent div */
+const easterNoseContent = document.createElement('div');
+document.getElementById("Easter-nose").appendChild(easterNoseContent);
+easterNoseContent.setAttribute("id","Easter-nose-content");
+
+/*easternose  styling */
+document.getElementById("Easter-nose").style.display = "none";
+document.getElementById("Easter-nose").style.zIndex = "1";
+document.getElementById("Easter-nose").style.position = "fixed";
+document.getElementById("Easter-nose").style.top = "0";
+document.getElementById("Easter-nose").style.left = "0";
+document.getElementById("Easter-nose").style.width = "100%";
+document.getElementById("Easter-nose").style.height = "100%";
+document.getElementById("Easter-nose").style.backgroundColor = "rgb(0,0,0,0.4)";
+document.getElementById("Easter-nose").style.paddingTop = "100px";
+
+/*easter nose content styling */
+document.getElementById("Easter-nose-content").style.padding = "20px";
+document.getElementById("Easter-nose-content").style.margin = "auto";
+document.getElementById("Easter-nose-content").style.border = "1px solid black";
+document.getElementById("Easter-nose-content").style.width = "80%";
+document.getElementById("Easter-nose-content").style.backgroundColor = "#fefefe";
+
+
+/*easter nose text */
+const easterNoseText = document.createElement('h2');
+easterNoseText.innerText = "Du petade på min näsa!";
+document.getElementById("Easter-nose-content").appendChild(easterNoseText);
+
+/* activates when nose is clicked */
+easterBtn.onclick = function() {
+    easterNose.style.display = "block";
+}
+/*activates when clicking outside modal box */
+window.onclick = function(event) {
+    if (event.target === easterNose) {
+        easterNose.style.display = "none";
+    }
+}
