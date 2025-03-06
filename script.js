@@ -77,9 +77,7 @@ document.getElementById("CV-picture-box").style.position = "relative";
 
 /*styles the button */
 document.getElementById("Easter-button").style.position = "absolute";
-document.getElementById("Easter-button").style.marginTop = "53%";
-document.getElementById("Easter-button").style.marginLeft = "-60%";
-document.getElementById("Easter-button").style.padding ="7px";
+document.getElementById("Easter-button").style.padding ="15px";
 document.getElementById("Easter-button").style.display = "hidden";
 
 /*create easternose modal */
@@ -126,3 +124,75 @@ window.onclick = function(event) {
         easterNose.style.display = "none";
     }
 }
+
+/* slideshow function  */
+
+const arrowDiv = document.createElement('div');
+const arrowLeft = document.createElement('button');
+const arrowRight = document.createElement('button');
+
+arrowDiv.setAttribute("id", "slide-arrow-container");
+arrowLeft.setAttribute("id", "slide-arrow-left");
+arrowRight.setAttribute("id", "slide-arrow-right");
+
+document.querySelector(".Projekts").appendChild(arrowDiv);
+document.getElementById("slide-arrow-container").appendChild(arrowLeft);
+document.getElementById("slide-arrow-container").appendChild(arrowRight);
+
+
+/*styling of slideshow buttons */
+document.getElementById("slide-arrow-container").style.position = "relative";
+document.getElementById("slide-arrow-container").style.zIndex = "1";
+
+document.getElementById("slide-arrow-left").style.padding = "15px";
+document.getElementById("slide-arrow-left").style.position = "absolute";
+document.getElementById("slide-arrow-left").style.top = "10rem";
+document.getElementById("slide-arrow-left").style.left = "2rem";
+
+document.getElementById("slide-arrow-right").style.padding = "15px";
+document.getElementById("slide-arrow-right").style.position = "absolute";
+document.getElementById("slide-arrow-right").style.top = "10rem";
+document.getElementById("slide-arrow-right").style.left = "115rem";
+
+arrowLeft.textContent = "<";
+arrowRight.textContent = ">";
+
+/*creates the slideshow function */
+/*source from Lun Dev Code : https://www.youtube.com/watch?v=6PZncvhAZB8 */
+let slider = document.querySelector('.Projekt-rows');
+let nextBtn = document.getElementById("slide-arrow-right");
+let prevBtn = document.getElementById("slide-arrow-left");
+
+nextBtn.onclick = () => {
+    slider.append(slider.querySelector('section:first-child'));
+}
+prevBtn.onclick = () => {
+    slider.prepend(slider.querySelector('section:last-child'));
+}
+
+
+/*Creates a query media function */
+/* code source from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_matchmedia with minor changes to function on my site*/
+
+function myFunction(x) {
+    if (x.matches) {
+        document.getElementById("Easter-button").style.marginTop = "22%";
+        document.getElementById("Easter-button").style.marginLeft = "-4%";
+
+        document.getElementById("slide-arrow-container").style.display = "none";
+    } else {
+        document.getElementById("Easter-button").style.marginTop = "50%";
+        document.getElementById("Easter-button").style.marginLeft = "-60%";
+
+        document.getElementById("slide-arrow-container").style.display = "block";
+    }
+}
+
+const x = window.matchMedia("(max-width: 720px)");
+
+myFunction(x);
+
+x.addEventListener("change", function() {
+    myFunction(x);
+});
+
