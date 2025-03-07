@@ -80,7 +80,7 @@ document.getElementById("CV-picture-box").style.position = "relative";
 
 /*styles the button */
 document.getElementById("Easter-button").style.position = "absolute";
-document.getElementById("Easter-button").style.padding ="15px";
+document.getElementById("Easter-button").style.padding ="20px";
 document.getElementById("Easter-button").style.display = "hidden";
 
 /*create easternose modal */
@@ -93,7 +93,7 @@ const easterNoseContent = document.createElement('div');
 document.getElementById("Easter-nose").appendChild(easterNoseContent);
 easterNoseContent.setAttribute("id","Easter-nose-content");
 
-/*easternose  styling */
+/*easternose modal  styling */
 document.getElementById("Easter-nose").style.display = "none";
 document.getElementById("Easter-nose").style.zIndex = "1";
 document.getElementById("Easter-nose").style.position = "fixed";
@@ -152,12 +152,12 @@ document.getElementById("slide-arrow-container").style.zIndex = "1";
 document.getElementById("slide-arrow-left").style.padding = "15px";
 document.getElementById("slide-arrow-left").style.position = "absolute";
 document.getElementById("slide-arrow-left").style.top = "10rem";
-document.getElementById("slide-arrow-left").style.left = "2rem";
+document.getElementById("slide-arrow-left").style.left = "2vw";
 
 document.getElementById("slide-arrow-right").style.padding = "15px";
 document.getElementById("slide-arrow-right").style.position = "absolute";
 document.getElementById("slide-arrow-right").style.top = "10rem";
-document.getElementById("slide-arrow-right").style.left = "115rem";
+document.getElementById("slide-arrow-right").style.right = "2vw";
 
 arrowLeft.textContent = "<";
 arrowRight.textContent = ">";
@@ -179,15 +179,15 @@ prevBtn.onclick = () => {
 /*Creates a query media function */
 /* code source from w3c.school with minor changes to function on my site*/
 
-function myFunction(x) {
+function queryMedia(x) {
     if (x.matches) {
-        document.getElementById("Easter-button").style.marginTop = "22%";
+        document.getElementById("Easter-button").style.marginTop = "16vh";
         document.getElementById("Easter-button").style.marginLeft = "-4%";
 
         document.getElementById("slide-arrow-container").style.display = "none";
     } else {
-        document.getElementById("Easter-button").style.marginTop = "50%";
-        document.getElementById("Easter-button").style.marginLeft = "-60%";
+        document.getElementById("Easter-button").style.marginTop = "15.5vh";
+        document.getElementById("Easter-button").style.right = "47%";
 
         document.getElementById("slide-arrow-container").style.display = "block";
     }
@@ -196,9 +196,9 @@ function myFunction(x) {
 /*activates the function when view-window matches the max-width */
 const x = window.matchMedia("(max-width: 720px)");
 
-myFunction(x);
+queryMedia(x);
 
 x.addEventListener("change", function() {
-    myFunction(x);
+    queryMedia(x);
 });
 
