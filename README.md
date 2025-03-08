@@ -11,4 +11,4 @@ The other project cards are simple placeholder for future project to be placed i
 
 Haven't put much info about me, but that will change later in time. For now there is lorem ipsum to act as placeholder.
 
-Have coded in functions into the main page like a slideshow so you can slide through the project cards with help  of the buttons to their sides, and also added a hidden easter egg.
+Have coded in functions into the main page like a slideshow so you can slide through the project cards with help  of the buttons to their sides, and also added a hidden easter egg that pops up a modal.
